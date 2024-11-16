@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cart.css') }}">
+</head>
+<body>
+    <section class="cart-container">
+        <header>
+            <h1>My Cart</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/account">My Account</a>
+                <a href="/checkout">Proceed to Checkout</a>
+            </nav>
+        </header>
+
+        <div class="cart-items">
+            <h2>Your Cart</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Artist</th>
+                        <th>Event Date</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Artist Name</td>
+                        <td>December 15, 2024</td>
+                        <td>$500</td>
+                        <td><button>Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>Artist Name</td>
+                        <td>January 20, 2025</td>
+                        <td>$400</td>
+                        <td><button>Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p><strong>Total Price:</strong> $900</p>
+            <button>Proceed to Checkout</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Artist Booking Platform</p>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='account.css') }}">
+</head>
+<body>
+    <section class="account-container">
+        <header>
+            <h1>My Account</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/cart">My Cart</a>
+                <a href="/logout">Logout</a>
+            </nav>
+        </header>
+        
+        <div class="account-details">
+            <h2>Account Information</h2>
+            <div class="user-info">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> 123-456-7890</p>
+                <p><strong>Address:</strong> 1234 Street, City, Country</p>
+                <button class="edit-button">Edit Profile</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Artist Booking Platform</p>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='help.css') }}">
+</head>
+<body>
+    <section class="help-container">
+        <header>
+            <h1>Help Center</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/account">My Account</a>
+                <a href="/cart">My Cart</a>
+                <a href="/logout">Logout</a>
+            </nav>
+        </header>
+
+        <div class="help-content">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq">
+                <h3>How do I book an artist?</h3>
+                <p>To book an artist, go to the artist's profile page, select the date and time for your event, and click "Book Artist".</p>
+            </div>
+            <div class="faq">
+                <h3>What is the cancellation policy?</h3>
+                <p>For cancellations, please contact us at least 48 hours before the event to avoid any charges.</p>
+            </div>
+            <div class="faq">
+                <h3>How can I contact customer support?</h3>
+                <p>If you need assistance, you can reach us through the "Contact Us" page or email support@example.com.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Artist Booking Platform</p>
+        </footer>
+    </section>
+</body>
+</html>

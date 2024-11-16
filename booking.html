@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Artist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='booking.css') }}">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>Book Your Artist</h1> <!-- Updated heading for professionalism -->
+        <div class="form-container">
+            <div class="input-row">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Event Type">
+            </div>
+            <div class="video-section">
+                <p>Artist Video Preview</p>
+                <video controls>
+                    <source src="path/to/your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="date-picker">
+                <label for="booking-date">Select Event Date:</label>
+                <input type="date" id="booking-date" name="event_date">
+            </div>
+            <button class="book-now">Book Now</button>
+        </div>
+    </main>
+</body>
+</html>

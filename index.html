@@ -5,41 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Your Artist</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
     <!-- Link to Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>BOOK YOUR ARTIST</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Feed</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Find My Artist</a></li>
-                    <li><a href="{{ url_for('login') }}">Login</a></li>
-                    
-                </ul>
-            </nav>
+                  <div class="search-container">
+                    <button class="search-button">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Search" class="search-icon">
+                    </button>
+                    <input type="text" placeholder= "BOOK YOUR ARTIST" class="search-input">
+          
+                
+                <div class="menu">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                   
+                </div>
         </div>
+        <nav>
+            <ul>
+                <a href="/feed">Feed</a>
+                <a href="/help">Help Center</a>
+                <li><a href="{{ url_for('artists') }}">Find My Artist</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                
+            </ul>
+        </nav>
 
         <!-- Bootstrap Carousel for Event Samples -->
         <div id="eventCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='images/event1.jpg') }}" alt="Event 1">
+                    <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.WLfYw_BlcdSQiIq_G5WGDAHaC5&pid=Api&P=0&h=220" alt="Event 1">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='images/event2.jpg') }}" alt="Event 2">
+                    <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.MYhHo_buS03KpG6zMPR50QHaD6&pid=Api&P=0&h=220" alt="Event 2">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='images/event3.jpg') }}" alt="Event 3">
+                    <img class="d-block w-100" src="https://tse4.mm.bing.net/th?id=OIP.UNJX5vQBg-n3lH2x5vzpbwHaEO&pid=Api&P=0&h=220" alt="Event 3">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='images/event4.jpg') }}" alt="Event 4">
+                    <img class="d-block w-100" src="https://tse1.mm.bing.net/th?id=OIP.JLUxF15UWXd58DPgKQH96AHaDt&pid=Api&P=0&h=220" alt="Event 4">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='images/event5.jpg') }}" alt="Event 5">
+                    <img class="d-block w-100" src="https://tse1.mm.bing.net/th?id=OIP.RDttMp79yLxiSVw-Cj48PwHaCh&pid=Api&P=0&h=220" alt="Event 5">
                 </div>
             </div>
             <!-- Carousel controls -->
@@ -56,7 +70,7 @@
 
     <section class="search-section">
         <div class="search-filter">
-            <h3>Search & Filter</h3>
+            <h3>Search & Filter&nbsp;&nbsp;</h3>
             <input type="text" placeholder="Search for artists...">
             <button>Search</button>
         </div>
@@ -65,23 +79,23 @@
             <h3>Recommended Artists</h3>
             <div class="artist-cards">
                 <div class="card">
-                    <img src="{{ url_for('static', filename='images/artist1.jpeg') }}" alt="Artist 1">
-                    <p>Vanshika Bhagat</p>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.KOmDZUAFc0HJ4765UJmgcAHaKw&pid=Api&P=0&h=220" alt="Artist 1">
+                    <p>Kushagra Raj</p>
                 </div>
                 <div class="card">
-                    <img src="{{ url_for('static', filename='images/artist2.jpg') }}" alt="Artist 2">
-                    <p>Linkin Park</p>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.BhWfTIz2DXMOSrboem0IRwHaEK&pid=Api&P=0&h=220" alt="Artist 2">
+                    <p>Arijit Singh</p>
                 </div>
                 <div class="card">
-                    <img src="{{ url_for('static', filename='images/artist3.jpg') }}" alt="Artist 3">
+                    <img src="https://up.yimg.com/ib/th?id=OIP._NIWTW9brc0oeGbBVeXcFQHaE8&pid=Api&rs=1&c=1&qlt=95&w=170&h=113" alt="Artist 3">
                     <p>Freddie Leiba</p>
                 </div>
                 <div class="card">
-                    <img src="{{ url_for('static', filename='images/artist4.jpg') }}" alt="Artist 4">
+                    <img src="https://up.yimg.com/ib/th?id=OIP.tQVbOKt1hr7MEydGqQv2lwHaEK&pid=Api&rs=1&c=1&qlt=95&w=215&h=120" alt="Artist 4">
                     <p>Jennifer Lopez</p>
                 </div>
                 <div class="card">
-                    <img src="{{ url_for('static', filename='images/artist5.jpg') }}" alt="Artist 5">
+                    <img src="https://up.yimg.com/ib/th?id=OIP.02XXqIKUeAk-Nxs0Tju5GAExDM&pid=Api&rs=1&c=1&qlt=95&w=176&h=117" alt="Artist 5">
                     <p>John Doe</p>
                 </div>
             </div>
@@ -91,8 +105,10 @@
     <footer>
         <nav class="bottom-nav">
             <a href="#">Home</a>
-            <a href="#">Cart</a>
-            <a href="#">Account</a>
+            <a href="{{ url_for('cart') }}">Cart</a>
+
+            <!-- Link to Account Page -->
+            <a href="{{ url_for('account') }}">Account</a>
             <a href="#">Trailers</a>
         </nav>
     </footer>

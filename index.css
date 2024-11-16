@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(120deg, #0e0d0d, #6dd5ed);
+    background: linear-gradient(120deg, #171515, #ceeff6);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -28,32 +28,35 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    font-size: 2.9rem;
+    color: white;
+    width: 100%;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-left: 500px;
-    color: white;
-    
-}
+
 
 header nav ul {
+    background-color: #f7f2f2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     list-style-type: none;
+    position:relative;
+    margin: 5px;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin: left 30%;
 }
 
 header nav ul li a {
-    color: white;
+    color: rgb(39, 11, 11);
+    position: relative;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header nav ul li a:hover {
@@ -123,6 +126,7 @@ header nav ul li a:hover {
 
 .artist-cards {
     display: flex;
+    height: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -170,10 +174,73 @@ header nav ul li a:hover {
     transition: color 0.3s;
 }
 
-.bottom-nav a:hover {
+.bottom-nav a:hover {   
     color: #f39c12;
 }
 
 footer {
     margin-top: 50px;
+}
+/* imp */
+nav{
+    align-content: space-between;
+    background-color: #f7f2f2;
+}
+
+.search-container {
+
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    margin: 20px;
+}
+
+/* sdjkhshjshj */
+.search-input {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 40px;
+}
+.search-input::placeholder{
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: baseline;
+    
+}
+.search-button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: auto;
+    padding: 10px;
+  
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+}
+
+                       
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    position:relative;
+    left: -20px;
+    border-radius: 50%;
+    margin: 3px;
+    top: 9px;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Artist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='artists.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Our Featured Artists</h1>
+    <div class="artist-list">
+        <!-- Artist 1 Card -->
+        <div class="artist-card">
+            <!-- Embedded video for artist -->
+            <iframe class="artist-video" src="https://www.youtube.com/embed/example_video_id1" title="Kushagra Raj Video" allowfullscreen></iframe>
+            <p>Kushagra Raj</p>
+            <a href="{{ url_for('book_artist', artist_id=1) }}">Book Now</a>
+        </div>
+        
+        <!-- Artist 2 Card -->
+        <div class="artist-card">
+            <!-- Embedded video for artist -->
+            <iframe class="artist-video" src="https://www.youtube.com/embed/example_video_id2" title="Arijit Singh Video" allowfullscreen></iframe>
+            <p>Arijit Singh</p>
+            <a href="{{ url_for('book_artist', artist_id=2) }}">Book Now</a>
+        </div>
+        
+        <div class="artist-card">
+            <!-- Embedded video for artist -->
+            <iframe class="artist-video" src="https://www.youtube.com/embed/example_video_id2" title="Arijit Singh Video" allowfullscreen></iframe>
+            <p>Vanshika</p>
+            <a href="{{ url_for('book_artist', artist_id=2) }}">Book Now</a>
+        </div>
+        <div class="artist-card">
+            <!-- Embedded video for artist -->
+            <iframe class="artist-video" src="https://www.youtube.com/embed/example_video_id2" title="Arijit Singh Video" allowfullscreen></iframe>
+            <p>kanishka</p>
+            <a href="{{ url_for('book_artist', artist_id=2) }}">Book Now</a>
+        </div>
+        <div class="artist-card">
+            <!-- Embedded video for artist -->
+            <iframe class="artist-video" src="https://www.youtube.com/embed/example_video_id2" title="Arijit Singh Video" allowfullscreen></iframe>
+            <p>Diljit</p>
+            <a href="{{ url_for('book_artist', artist_id=2) }}">Book Now</a>
+        </div>
+        <div class="artist-card">
+            <!-- Embedded video for artist -->
+            <iframe class="artist-video" src="https://www.youtube.com/embed/example_video_id2" title="Arijit Singh Video" allowfullscreen></iframe>
+            <p>yajvi</p>
+            <a href="{{ url_for('book_artist', artist_id=2) }}">Book Now</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
